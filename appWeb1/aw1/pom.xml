@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pe.edu.cibertec</groupId>
+	<artifactId>aw1</artifactId>
+	
+	<!-- version semantica -->
+	<version>0.2.0</version>
+	<name>Ejemplo de Aplicaciones Web</name>
+	<description>En este clase vamos a ver de maven</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.1-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.22</version>
+		</dependency>
+		
+		<!-- 
+			JPA = Java Persistence API
+			JPA = Jakarta Persistence API (version de java 17)
+			
+			JPA es una especificacion que nos dice como enlazarnos a una base de datos desde java 
+			Hibernate es una implementacion de esa especificacion, es una libreria
+			TopLink, EclipseLink...
+		-->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.6.9.Final</version>
+		</dependency>
+	</dependencies>
+</project>
